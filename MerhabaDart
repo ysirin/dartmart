@@ -1,0 +1,22 @@
+// hello, value, variable
+main()=>hello();
+
+void hello(){
+  print("Merhaba Dart");
+  print("Math:"+"1+1="+"${1+1}"+ " VE 12/3="+"${12/3}");
+  print("Bool:true&&false="+"${true&&false}");
+  
+  var str ="Deneme1";
+  print(str);
+  
+  var num1 = 1984;
+  print(num1 * 100);
+  
+  final num n = 123;
+  // n=n+77;
+  print(n);
+  
+  const num n2 = 999;
+  // n2+=1;
+  print(n2);
+}
