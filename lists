@@ -1,0 +1,23 @@
+// List,
+main(){
+  
+  var listem = <int>[3,5,7,10];
+  // var e1 = vals.first;
+  // var e2 = vals.last;  
+  var e1 = listem.getRange(2,4);
+  print(e1);
+  var e2 = listem.elementAt(3);
+  print(e2);
+  
+  var vals2 = List<int>.generate(10, (n) => n * n);
+  print(vals2);
+  
+  List<String> words = [
+    'sky',
+    'cloud',
+    'tent',
+    'tree',
+    'falcon',
+  ];
+  print(words);
+}
