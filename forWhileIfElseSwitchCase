@@ -1,0 +1,27 @@
+// For, While, If/Else, Switch/Case
+main(){
+  
+  for(num c=1;c<5;c++){
+    print(c);
+  }
+  
+  var Collection = [1,2,3,4,"YUNUS"];
+  for (var I in Collection){print(I);};
+  
+  
+ var callback = [];
+ for(num k=1;k<4;k++){
+   callback.add(()=>print("Deg:"+k.toString()));
+ }
+  
+ callback.forEach((c)=>c());
+  
+ 
+  var bugun = 66;
+  var yarin;
+  
+  print(yarin??bugun);  // null kontrol
+  
+
+  
+}
