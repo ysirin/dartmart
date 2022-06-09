@@ -1,0 +1,46 @@
+// Maps
+void main() {
+  var meyve = {1: 'Elma', 2: 'Armut'};
+  print('Sonuc olarak ${meyve.length} adet meyve var.');
+  
+  // Map fromIterables
+  var letters = ['I', 'II', 'V', 'X', 'L'];
+  var numbers = [1, 2, 5, 10, 50];
+
+  var data = Map<String, int>.fromIterables(letters, numbers);
+  print(data);
+  
+  
+  var words = ['sky', 'cloud', 'sod', 'worm', 'put', 'water', 'cup'];
+
+  var i = 0;
+  var data2 = {
+    for (var e in words)
+      if (e.length == 3) i++: e
+  };
+
+  print(data2);
+  
+  // merge maps
+  var f1 = {1: 'Apple', 2: 'Orange'};
+  var f2 = {3: 'Banana'};
+  var f3 = {4: 'Mango'};
+
+  var fruit = {}..addAll(f1)..addAll(f2)..addAll(f3);
+  print(fruit);
+
+  var fruit2 = Map.from(f1)..addAll(f2)..addAll(f3);
+  print(fruit2);
+
+  var fruit3 = {...f1, ...f2, ...f3};
+  print(fruit3);
+  
+  // contains key/value
+  var myMap = {1: 'Apple', 2: 'Orange', 3: 'Banana'};
+  print(myMap.containsKey(1));
+  print(myMap.containsKey(3));
+
+  print(myMap.containsValue('Apple'));
+  print(myMap.containsValue('Cherry'));
+  
+}
